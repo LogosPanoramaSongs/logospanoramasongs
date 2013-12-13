@@ -9,13 +9,13 @@
 global = {
   \key a \major
   \time 4/4
-  \tempo 4 = 110
+  \tempo 4 = 120
 }
 
 akkorde = \chordmode {
   a1 a1 d1 a1 a1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 %16 
   % weine nicht ...
-  a1 a1 a1 d1 a1 e1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 a1
+  a1 a1 a1 d1 a1 e1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 a1 %35
   % (der) himmel singt ...
   a1 d1 a1 e1
   % source-data next page
@@ -65,14 +65,14 @@ notesMelody = {
   e2 e | cis4. d8 e4 e~ | e2. r4 | b4 cis d e | 
   cis2 cis4. cis8 | a'4 a2 a8 a8 | a2. a4 | 
   gis4 gis gis gis | a2. r8 a8 | a4 a~ a8 a8 a8 a8 | 
-  a4 a2 a4 | gis4 gis8 gis gis4 gis8 gis | gis4 gis gis gis~ | gis r4 r2 |
-  cis,4. d8 e2~ | e4 r4 r4 r8 e8 | fis4 fis fis e8 d8 | e2. r4 |
+  a4 a2 a4 | gis4 gis8 gis gis4 gis8 gis | gis4 gis a a~ | a r4 r2 |
+  cis,4. d8 e2~ | e4 r2 r8 e8 | fis4 fis fis e8 d8 | e2. r4 |
   cis4. d8 e4 e~ | e2. r4 | b4 cis d e | cis2 cis4 \times 2/3 {a'8 a a} | 
   a4 a~ a8 r8 \times 2/3 {a8 a a} | a4 a~ a8 r8 a8 a | 
   gis2 gis4 gis4 | a a~ a8 r8 \times 2/3 {a8 a a} | a4 a~ a8 r8 a4 |
-  a2~ a8 r8 a8 a | gis4 gis gis gis | gis gis a2~ | a4 r4 r4 r8 cis8 |
-  cis,8 cis cis cis cis cis cis4 | e8 e e e fis8 fis4. | 
-  cis8 cis cis cis cis8 cis4. | b8 b b cis d b~ b a' |
+  a2~ a8 r8 a8 a | gis4 gis gis gis | gis gis a2~ | a4 r2 r8 cis,8 |
+  cis8 cis cis cis cis cis cis4 | d8 d d d e8 d4. | 
+  cis8 cis cis cis cis8 cis4. | b8 b b cis d b~ b a' | %40
   % source-data next page
   a4 a a8 a a a | a a a a b a4. |
   a8 a a a a8 a4. | gis8 gis gis a b gis4. |
@@ -80,16 +80,16 @@ notesMelody = {
   a8 a a a a4( b4) | b2.. b8 | cis4 b8 a a4. gis8 |
   a8 gis a gis a2 | e4 e8 e8 e4 e | 
   cis'8 b b a a2 | fis4 fis gis a |
-  a8 e e cis e4 e | fis4 fis gis gis | gis gis8 gis8 gis4 gis |
+  a8 e e cis e4 e | fis4 fis gis gis | gis gis8 gis8 a4 a |
   fis4 fis8 fis gis4 a | a8 e e cis e4 e |
   fis4 fis8 fis gis4 gis8 gis8 | gis4 gis a2 |
   cis4 b8 a a2 | a8 gis a gis a4. e8 |
   e4 e8 e e4 e | cis'8 b b a a2 |
-  fis2 gis4 a8 a | a e e b e4 e8 e |
+  fis2 gis4 a8 a | a e e cis e4 e8 e |
   % source-data next page
   fis4 fis gis gis | gis gis8 gis a4 a | fis4 fis gis a |
   a8 e e cis e4 e8 e | a4 a cis b8 a |
-  a4 a2 r4 \bar "|."
+  a4 a4 r2 \bar "|."
 }
 
 \score {
