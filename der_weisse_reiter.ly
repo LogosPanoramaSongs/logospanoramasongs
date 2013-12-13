@@ -9,13 +9,13 @@
 global = {
   \key a \major
   \time 4/4
-  \tempo 4 = 180
+  \tempo 4 = 110
 }
 
 akkorde = \chordmode {
-  a1 a1 d1 a1 a1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2
+  a1 a1 d1 a1 a1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 %16 
   % weine nicht ...
-  a1 a1 d1 a1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 a1 a1 d2 a2 a1
+  a1 a1 a1 d1 a1 e1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 a1
   % (der) himmel singt ...
   a1 d1 a1 e1
   % source-data next page
@@ -62,7 +62,7 @@ text = \lyricmode {
 
 notesMelody = {
   cis4. d8 e4 e4~ | e2. r8 e8 | fis4 fis fis e8 d | 
-  e2 e | cis4. e8 e4 e~ | e2. r4 | b4 cis e e | 
+  e2 e | cis4. d8 e4 e~ | e2. r4 | b4 cis d e | 
   cis2 cis4. cis8 | a'4 a2 a8 a8 | a2. a4 | 
   gis4 gis gis gis | a2. r8 a8 | a4 a~ a8 a8 a8 a8 | 
   a4 a2 a4 | gis4 gis8 gis gis4 gis8 gis | gis4 gis gis gis~ | gis r4 r2 |
@@ -98,14 +98,14 @@ notesMelody = {
     \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
     
-    \new TabStaff \with { instrumentName = #"guitar" }
+ %{   \new TabStaff \with { instrumentName = #"guitar" }
     <<
       \set TabStaff.stringTunings = #guitar-tuning
           {
             \stemDown
              \relative c' \notesMelody
           }
-    >>
+      >>%}
   >>
 }
 
