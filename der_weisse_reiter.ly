@@ -2,7 +2,8 @@
 
 \header {
   title = "Der weiße Reiter"
-  composer = "Esther Judith Becker"
+  composer = "Text und Melodie: Dr. Esther Judith Becker"
+  opus = "2011"
 }
 
 global = {
@@ -48,8 +49,8 @@ text = \lyricmode {
   scheint ein wei -- ßes Pferd. Der auf ihm sitzt, ist
   treu und wahr -- haf -- tig. Sei -- ne Au -- gen
   sind wie Feu -- er -- flamm -- men, Sei -- ne Stim -- me wie Was -- ser -- flu -- ten.
-  Auf sei -- nem Haupt sind vie -_ le _ Kron -- nen,
-  Aus sei -- nem Mund kommt ein schar -- fes Schwert.
+  Auf sei -- nem Haupt sind vie -_ le _ Kro -- nen,
+  aus sei -- nem Mund kommt ein schar -- fes Schwert.
   Dies ist das Schwert der Ge -- rech -- tig -- keit. Die
   Hee -- re des Him -- mels fol -_ gen Ihm nach.
   Sie rei -- ten auf wei -_ ßen _ Pfer -- den in
@@ -97,14 +98,14 @@ notesMelody = {
     \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
     
-    %    \new TabStaff \with { instrumentName = #"mandolin" }
-    %<<
-    %  \set TabStaff.stringTunings = #guitar-tuning
-    %      {
-    %        \stemDown
-    %         \relative c' \notesMelody
-    %      }
-    %>>
+    \new TabStaff \with { instrumentName = #"guitar" }
+    <<
+      \set TabStaff.stringTunings = #guitar-tuning
+          {
+            \stemDown
+             \relative c' \notesMelody
+          }
+    >>
   >>
 }
 
