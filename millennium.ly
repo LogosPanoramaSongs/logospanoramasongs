@@ -108,6 +108,7 @@ versStropheVier = \lyricmode {
   <<
     \new Voice { \voiceOne << \global \notenStropheEins >> }
   >>
+  
   \midi {
     \context {
       \Score
