@@ -15,7 +15,7 @@ global = {
 akkorde = \chordmode {
   a1 a1 d1 a1 a1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 %16 
   % weine nicht ...
-  a1 a1 a1 d1 a1 e1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 a1 %35
+  a1 a1 a1 d1 a1 a1 a1 e1 a1 d1 a1 e1 a1 d1 a1 e1 e2 a2 a1 %35
   % (der) himmel singt ...
   a1 d1 a1 e1
   % source-data next page
