@@ -11,6 +11,7 @@ global = {
   \tempo 4 = 120
 }
 
+<<<<<<< HEAD
 akkordeVersEins = \chordmode {
   
 }
@@ -26,6 +27,16 @@ textA = \lyricmode {
 textRefrain = \lyricmode {
 	Der Gür -- tel der Wahr -- heit schüt -- ze den Leib, der Helm des Heils schüt -- ze
   den Ver -- stand, 
+=======
+akkorde = \chordmode {
+  
+  
+  
+}
+
+text = \lyricmode {
+  
+>>>>>>> 091ee56ec26724b7c232d490a2d5af667dc656e0
 }
 
 notesVersEins = {
@@ -43,16 +54,25 @@ notesVersZwei = {
 \bookpart {
   \score {
     <<
+<<<<<<< HEAD
       \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
       \new Voice { \voiceOne << \global \relative c' \notesVersEins >> }
       \addlyrics { \textA }
+=======
+      \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
+      \new Voice { \voiceOne << \global \relative c' \notesVersEins >> }
+      \addlyrics { \text }
+>>>>>>> 091ee56ec26724b7c232d490a2d5af667dc656e0
     >>
   }
   
   \score {
    <<
      \new Voice { \voiceOne << \global \relative c' \notesRefrain >> }
+<<<<<<< HEAD
      \addlyrics { \textRefrain }
+=======
+>>>>>>> 091ee56ec26724b7c232d490a2d5af667dc656e0
    >>
   }
   
@@ -65,7 +85,13 @@ notesVersZwei = {
 
 \score {
   <<
+<<<<<<< HEAD
     \new Voice { \voiceOne << \global \relative c' \notesVersEins >> }
+=======
+    \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
+    \new Voice { \voiceOne << \global \relative c' \notesVersEins >> }
+    \addlyrics { \text }
+>>>>>>> 091ee56ec26724b7c232d490a2d5af667dc656e0
   >>
   
   \midi {
@@ -73,4 +99,8 @@ notesVersZwei = {
       \Score
     }
    }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 091ee56ec26724b7c232d490a2d5af667dc656e0
