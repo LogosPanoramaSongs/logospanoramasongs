@@ -24,8 +24,13 @@ textA = \lyricmode {
 }
 
 textRefrain = \lyricmode {
+<<<<<<< HEAD
 Der Gür -- tel der Wahr -- heit schüt -- ze den Leib, der Helm des Heils schüt -- ze
   den Ver -- stand,
+=======
+	Der Gür -- tel der Wahr -- heit schüt -- ze den Leib, der Helm des Heils schüt -- ze
+  den Ver -- stand, 
+>>>>>>> 70d3050d933b6649bae4be521c98cd5e25d56c27
 }
 
 notesVersEins = {
@@ -74,6 +79,7 @@ notesVersZwei = {
     }
    }
 }
+<<<<<<< HEAD
 
     Status
     API
@@ -88,3 +94,5 @@ notesVersZwei = {
     Security
     Contact
 
+=======
+>>>>>>> 70d3050d933b6649bae4be521c98cd5e25d56c27
