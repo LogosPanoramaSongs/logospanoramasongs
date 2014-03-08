@@ -2,8 +2,7 @@
 
 \header {
   title = "Der weiße Reiter"
-  composer = "Text und Melodie: Dr. Esther Judith Becker"
-  opus = "2011"
+  composer = "Esther Judith Becker, 2011"
 }
 
 global = {
