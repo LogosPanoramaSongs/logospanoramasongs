@@ -2,13 +2,13 @@
 
 \header {
   title = "Auf dem goldenen Altar"
-  composer = "Esther Judith Becker"
+  composer = "Esther Judith Becker, 2012"
 }
 
 global = {
   \key c \major
   \time 4/4
-  \tempo 4 = 100
+  \tempo 4 = 105
 }
 
 akkorde = \chordmode {
@@ -120,6 +120,83 @@ notesMelody = {
     \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
   >>
+}
+
+\markup {
+\vspace #2
+  \left-column {
+  \wordwrap-string #"
+  Ashirah Lecha, Adon,
+  
+  Azamrah Shimcha, Elyon,
+  
+  Ahalel Otcha, El Sali,
+  
+  Avarech Otcha, El Roi.
+
+  
+  Airah shochar, El Chaiyai,
+  
+  Azaprah Shimcha le'Echai,
+  
+  Ezbechah zevach todah,
+  
+  Ezbechah zevach teruah.
+
+  
+  Tefillati ketoret Lefaneicha
+  
+  Al Mizbeach HaZahav.
+  
+  Tehillati ketoret Lefaneicha
+  
+  Al Mizbeach HaZahav.
+
+  
+  Lecha ahavati, El Olam,
+  
+  Lecha ahavati ad olam.
+
+  "
+}}
+\markup {
+\vspace #2
+  \right-column {
+  \wordwrap-string #"
+  Ich singe Dir, Herr
+  
+  Ich singe Deinem Namen, Höchster
+  
+  Ich lobe Dich, Gott, mein Fels
+  
+  Ich preise Dich, den Gott, der mich sieht
+  
+  Ich wecke die Morgenröte, Gott meines Lebens
+  
+  Ich verkünde Deinen Namen meinen Brüdern.
+  
+  Ich bringe ein Dankopfer,
+  
+  Ich bringe ein Jubelopfer.
+  
+  Mein Gebet ist Weihrauch vor Dir
+  
+  auf dem goldenen Altar.
+  
+  Mein Lobpreis ist Weihrauch vor Dir
+  
+  auf dem goldenen Altar.
+  
+  Dir gehört meine Liebe, Ewiger Gott
+  
+  Dir gehört meine Liebe auf ewig.
+  "
+}}
+\markup {
+\vspace #2
+  \wordwrap-string #"
+  Liedtext entsprechend Offenbarung 8, Psalm 141 und 108
+  "
 }
 
 \score {
