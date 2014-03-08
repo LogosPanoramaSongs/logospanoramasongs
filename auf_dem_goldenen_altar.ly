@@ -106,12 +106,12 @@ notesMelody = {
   a8 a a a a a a4 | gis8 gis gis4 gis2 |
   a4 a8 a a4 a8 a | a4( g8 f e2) |
   c'8 c c c c c c4 | b8 b b4 b2 |
-  a4 a8 a a4 c8 b | c2.. c8 | c4 \times 2/3 {c8 c c} c4( g) |
-  a4 a a4. a8 | b4 \times 2/3 {b8 b b} b4( c) |} \alternative { {c c c4. e,8 |} {c'4 c c4. c8} } |
+  a4 a8 a a4 c8 b | c2.. c8 | c4 \times 2/3 {c8 c c} c4.( g8) |
+  a4 a a4. a8 | b4 \times 2/3 {b8 b b} b4.( c8) |} \alternative { {c4 c c4. e,8 |} {c'4 c c4. c8} } |
   
-  c4 \times 2/3 {c8 c c} c4( g) |
+  c4 \times 2/3 {c8 c c} c4.( g8) |
   a4 a a4. a8 | b4 \times 2/3 {b8 b b} b4. b8 | c4 \times 2/3 {c8 c c} c4. c8 | 
-  b4 \times 2/3 {b8 b b} b4( c) | c4 c4 c2 | \bar"|."
+  b4 \times 2/3 {b8 b b} b4.( c8) | c4 c4 c2 | \bar"|."
 }
 
 \score {
