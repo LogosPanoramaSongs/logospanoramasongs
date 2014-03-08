@@ -33,6 +33,8 @@ akkorde = \chordmode {
   a1:m f2 c2
   f1 e1 a1:m c1 c1
   f1 g1 c1
+  
+  c1 c1 f1 g1 c1 g1 c1
 }
 
 text = \lyricmode {
@@ -71,14 +73,16 @@ Al Miz -- be -- ach Ha -- Za -- hav.
 Le -- cha a -- ha -- va -- ti, El O -- lam,
 Le -- cha a -- ha -- va -- ti ad o -- lam.
 
-Lecha ahavati, El Olam,
-Lecha ahavati, lecha ahavati,
-Lecha ahavati ad olam.
+A- ad o -- lam.
+
+Le -- cha a -- ha -- va -- ti, El O -- lam,
+Le -- cha a -- ha -- va -- ti, Le -- cha a -- ha -- va -- ti,
+Le -- cha a -- ha -- va -- ti ad o -- lam.
 }
 
 notesMelody = {
-  \partial 4 c4 | c c g'8 g g g | f4 f8 f f2 |
-  d8 d d d g4. g8 | d2 e4 c |
+  \partial 4 c4 | c c g'8 g g a | f4 f8 f f2 |
+  d8 d d d g4. g8 | f2 e4 c |
   a' a8 a a4 g8 f | g2 e8 e e e |
   f f f f f4( e) e2. c4 | c c8 c g' g g a |
   f4 f16 f8. f2 | d4 d8 d g4 g8 g | f4. e8 e2 |
@@ -92,7 +96,7 @@ notesMelody = {
   
   % seite 2
   
-  f4 f f4. f8 | f4 f e4. e8 | c'4 c8 c c4. g8 |
+  f4 f f4. f8 | f4 f e4. e8 | \repeat volta 2 { c'4 c8 c c4. g8 |
   a2. a8 a | b4. b8 b4. c8 | c2. c8 c |
   c4 c c( g) | a a a a8 a | b4 b b4.( c8) |
   c4 c c4. e,8 | e4 e8 e b'4.( c8) | c4 b e, a8 a |
@@ -102,8 +106,12 @@ notesMelody = {
   a8 a a a a a a4 | gis8 gis gis4 gis2 |
   a4 a8 a a4 a8 a | a4( g8 f e2) |
   c'8 c c c c c c4 | b8 b b4 b2 |
-  a4 a8 a a4 d8 b | c2.. c8 | c4 \times 2/3 {c8 c c} c4( g) |
-  a4 a a4. a8 | b4 \times 2/3 {b8 b b} b4( c) | c c c2 | \bar"|."
+  a4 a8 a a4 c8 b | c2.. c8 | c4 \times 2/3 {c8 c c} c4( g) |
+  a4 a a4. a8 | b4 \times 2/3 {b8 b b} b4( c) |} \alternative { {c c c4. e,8 |} {c'4 c c4. c8} } |
+  
+  c4 \times 2/3 {c8 c c} c4( g) |
+  a4 a a4. a8 | b4 \times 2/3 {b8 b b} b4. b8 | c4 \times 2/3 {c8 c c} c4. c8 | 
+  b4 \times 2/3 {b8 b b} b4( c) | c4 c4 c2 | \bar"|."
 }
 
 \score {
