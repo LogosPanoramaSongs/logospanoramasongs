@@ -163,15 +163,15 @@ notesMelody = {
 \vspace #2
   \right-column {
   \wordwrap-string #"
-  Ich singe Dir, Herr
+  Ich singe Dir, Herr,
   
-  Ich singe Deinem Namen, Höchster
+  Ich singe Deinem Namen, Höchster,
   
-  Ich lobe Dich, Gott, mein Fels
+  Ich lobe Dich, Gott, mein Fels,
   
-  Ich preise Dich, den Gott, der mich sieht
+  Ich preise Dich, den Gott, der mich sieht,
   
-  Ich wecke die Morgenröte, Gott meines Lebens
+  Ich wecke die Morgenröte, Gott meines Lebens,
   
   Ich verkünde Deinen Namen meinen Brüdern.
   
@@ -187,7 +187,7 @@ notesMelody = {
   
   auf dem goldenen Altar.
   
-  Dir gehört meine Liebe, Ewiger Gott
+  Dir gehört meine Liebe, Ewiger Gott,
   
   Dir gehört meine Liebe auf ewig.
   "
