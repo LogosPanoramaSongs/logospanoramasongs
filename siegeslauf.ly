@@ -77,6 +77,22 @@ notesRefrain = {
   bes2 bes4 bes | bes2. r4 |
 }
 
+notesRefrainAlt = {
+  \partial 8 es8 | g4 es8 es g4 es4 | as4 g8 g as4. as8 | f4 f f f8 f | g4 f4 g4 g | c2 g4 g | 
+  g2. g8 g | as4 as8 as as4 as | g4 f4 g2 | es4 es es es8 es | d4 d2. | 
+  d4 d g4 g8 f8 | es4 c2. | es4 es8 es es4 es8 es | d4 d2. | d4 d4 g4 f4 | 
+  es4 c2. | g'4 es8 es g4 es | as4( g) as2 | f4 f f2 | g4( f) g4 g | 
+  c4 c g4 g | g2. r4 | as4 as as as8 as | g4 f g2 | f2. f4 | 
+  g2. r4 | f2 f4 f | g2. r4 | f2. f4 | 
+  g2. r4 | f2 f4 f | g2. r4 |
+}
+
+notesRefrainAltA = {
+  \repeat unfold 20 { \skip1 }
+  | f2. f4 | 
+  g2. r4 | f2 f4 f | g2. r4 |
+}
+
 \bookpart {
   \score {
     <<
@@ -90,7 +106,7 @@ notesRefrain = {
   \score {
    <<
      \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain }
-     \new Voice { \voiceOne << \global \relative c' \notesRefrain >> }
+     \new Voice { \voiceOne << \global \relative c' \notesRefrain  >> }
      \addlyrics { \textRefrain }
    >>
   }
@@ -173,7 +189,7 @@ Liedtext entsprechend Römer 13, Epheser 6, 1. Korinther 9 und 2. Timotheus 4
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain }
-    \new Voice { \voiceOne << \global \relative c' \notesRefrain >> }
+    \new Voice { \voiceOne << \global \relative c' \notesRefrain  >> }
   >>
   
   \midi {
