@@ -2,25 +2,22 @@
 
 \header {
   title = "Millennium"
-  composer = "Text und Melodie: Esther Judith Becker, 2011"
+  composer = "Esther Judith Becker, 2011"
 }
 
 global = {
   \key b \major
   \time 4/4
-  \tempo 4 = 180
-}
-
-noten = \relative c' {
-  dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis8 fis8 gis4 fis4 e4 dis4 cis2. r8 cis4 e4.( dis8 ) e4 dis4 dis2 dis2 gis4 gis4 gis4 b4 ais1 dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4 e4.( dis8 ) e4 dis4 dis2 dis2 fis4 fis4 fis4 ais4 b1
-  dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis8 fis8 gis4 fis4 e4 dis4 cis2. r8 cis4 e4.( dis8 ) e4 dis4 dis2 dis2 gis4 gis4 gis4 b4 ais1 dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4 e4.( dis8 ) e4 dis4 dis2 dis2 fis4 fis4 fis4 ais4 b1
+  \tempo 4 = 115
 }
 
 notenStropheEins = \relative c' {
-  dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis8 fis8 gis4 fis4 e4 dis4 cis2. r8 cis4
-  e4.( dis8 ) e4 dis4 dis2 dis2 gis4 gis4 gis4 b4 ais1 \bar ""
-  dis,4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4 \bar ""
-  e4.( dis8 ) e4 dis4 dis2 dis2 fis4 fis4 fis4 ais4 b1 \bar "|."
+  dis4. cis8 dis4 fis4 | dis4. cis8 dis4 fis8 fis8 |
+  gis4 fis4 e4 dis4 | cis2. cis4 |
+  e4.( dis8 ) e4 dis4 | dis2 dis2 | gis4 gis4 gis4 b4 |
+  ais1 | dis,4. cis8 dis4 fis4 | dis4. cis8 dis4 fis4 |
+  gis4 fis4 e4 dis4 | cis2. cis4 |
+  e4.( dis8 ) e4 dis4 | dis2 dis2 | fis4 fis4 fis4 ais4 | b1 | \bar "|."
 }
 notenStropheZwei = \relative c' {
   dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4
@@ -41,9 +38,16 @@ notenStropheVier = \relative c' {
   e4. dis8 e4 dis4 dis4 dis4 dis4 dis4 fis4 fis8 fis8 fis4 ais4 b1 \bar "|."
 }
 
-akkordeVersEins = \chordmode { b b2 e2 f }
+akkordeVersEins = \chordmode {
+  b1 b1 e1 fis1 e1
+  b1 e1 fis1 b1 b1
+  e1 fis1 e1 b1 fis1
+  b1 
+
+}
 
 versStropheEins = \lyricmode {
+  \set stanza = #"Vers 1: "
   Bei der ers -- ten Auf -- er -- steh -- ung er -- bebt die gan -- ze Welt. Der 
   Herr al -- ler Her -- ren kommt vom Him -- mels -- zelt. 
   Auf dem Öl -- berg wird Er ste -- hen wie Er es ver -- sprach.  In 
@@ -70,42 +74,19 @@ versStropheVier = \lyricmode {
 
 % fuer die pdf-ausgabe
 % bookpart teilt auf einzelne Seiten zu
-\bookpart {
-  \score {
+%\bookpart {
+\score {
     <<
       \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
       \new Voice { \voiceOne << \global \notenStropheEins >> }
       \addlyrics { \versStropheEins }
     >>
-  }
-
-  \score {
-    <<
-      \new Voice { \voiceOne << \global \notenStropheZwei >> }
-      \addlyrics { \versStropheZwei }
-    >>
-  }
-}
-
-\bookpart {
-  \score {
-    <<
-      \new Voice { \voiceThree << \global \notenStropheDrei >> }
-      \addlyrics { \versStropheDrei }
-    >>
-  }
-
-  \score {
-    <<
-      \new Voice { \voiceFour << \global \notenStropheVier >> }
-      \addlyrics { \versStropheVier }
-    >>
-  }
 }
 
 %fuer die midi-ausgabe
 \score {
   <<
+    \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
     \new Voice { \voiceOne << \global \notenStropheEins >> }
   >>
   

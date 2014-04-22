@@ -2,12 +2,12 @@
 
 \header {
   title = "Sein Name"
-  composer = "Esther Judith Becker, 2012"
+  composer = "Esther Judith Becker, 2010"
 }
 
 global = {
   \key g \major
-  \tempo 4 = 100
+  \tempo 4 = 115
 }
 
 akkorde = \chordmode {
@@ -47,7 +47,7 @@ text = \lyricmode {
   
   Dies ist Sein Na -- me, dies ist Sein Na -- me,
   Dies ist Sein Na -- me, Sein Na -- me:
-  A -- do -- nai Ze -- va -- ot, El Shad -- dai,
+  A -- do -- nai Tze -- va -- ot, El Shad -- dai,
   El El -- yon. E -- lo -- hei Yis -- ra -- el,
   K' -- dosh Yis -- ra -- el. 
   Dies ist der Na -- me von Sei -- nem Sohn,
@@ -57,7 +57,7 @@ text = \lyricmode {
   
   von Sei -- nem Sohn: Pe -- le Yo -- etz, El Gi -- bor,
   A -- vi Ad Sar Sha -- lom, Im -- ma -- nu -- el, Ye
-  shu -- at yis -- ra -- el, Im -- ma -- nu -- el, ye shu -- at yis -- ra --
+  shu -- at Yis -- ra -- el, Im -- ma -- nu -- el, Ye shu -- at Yis -- ra --
   el Ye shu -- a, Seh ha -- E -- lo -- him, Ye 
   shu -- a, Me -- lech haM' la -- chim, Ye -- shu -- a, A --
   don ha -- A -- do -- nim, Ye -- shu -- a, Le -- chem ha -- Cha --
@@ -67,10 +67,10 @@ text = \lyricmode {
 }
 
 noten = {
-  b4. a8 g4 fis | e e2 e4 | a4. g8 fis4 e | d d2. |
+  \repeat volta 2 {b4. a8 g4 fis | e e2 e4 | a4. g8 fis4 e | d d2. |
   g2 g4 g8( fis) | e2 e4 d | d2( fis4) a | g2. r4 |
   b2 b | c c4 b | a2 a4 g | b2. r4 |
-  g2 g4 fis | e2 e4 d | d d fis a | g2. r4 |
+  g2 g4 fis | e2 e4 d | d d fis a | g2. r4 | }
   b2 b4 a | c2 c4. r8 | a2 a4 g | b2 b4. r8 |
   g2 g4 b | a2 a4( g) | fis2 fis4 a | g2. r4 |
   
@@ -84,15 +84,15 @@ noten = {
   %seite 2
   
   fis2 fis4 a | g2. r4 | g2 g4 b, | c2. r4 fis2. c4 | b2. r4 |
-  e2. b4 | a2. r4 | fis'2. a4 | g2. r4 | g2 g4. g8 | a2. r8 a8 |
-  a4 a a4. c8 | b2. r4 | g2 g4. b8 | a2. r8 g8 | fis4 fis fis4. a8 |
-  g2. r8 b8 | b2.( a4) | c2. r4 | a4 a a4. g8 | b2. r8 b8 |
-  b2( d4.) d8( | c2.) r4 | c4 c c4. b8 | b2. r8 b8 | b2.( a4) | c2. r8 b8 |
+  e2. b4 | a2. r4 | fis'2. a4 | g2. r4 | g2 g4. g8 | a2. a4 |
+  a4 a a4. c8 | b2. r4 | g2 g4. b8 | a2. g4 | fis4 fis fis4. a8 |
+  g2. b4 | b2.( a4) | c2. r4 | a4 a a4. g8 | b2. b4 |
+  b2( d4.) d8( | c2.) r4 | c4 c c4. b8 | b2. b4 | b2.( a4) | c2. r8 b8 |
   
-  a4 a a4. g8 | b2. r8 g8 | g2.( b4) | a2. r4 | fis4 fis fis4. a8 |
-  g2. r8 b8 | b2.( a4) | c2. r8 b8 | a4 a a4. g8 | b2. r8 b8 |
-  b2( d4.) d8( | c2.) r4 | c2 c4( b) | b2. r8 b8 | b2.( a4) | c2. r4 |
-  a2 a4. g8 | b2. r8 g8 | g2.( b4) | a2. r4 | fis4 fis fis4. a8 | g2. r4 | \bar"|."
+  a4 a a4. g8 | b2. g4 | g2.( b4) | a2. r4 | fis4 fis fis4. a8 |
+  g2. b4 | b2.( a4) | c2. r8 b8 | a4 a a4. g8 | b2. b4 |
+  b2( d4.) d8( | c2.) r4 | c2 c4( b) | b2. b4 | b2.( a4) | c2. r4 |
+  a2 a4. g8 | b2. g4 | g2.( b4) | a2. r4 | fis4 fis fis4. a8 | g2. r4 | \bar"|."
 }
 
 
@@ -112,11 +112,11 @@ noten = {
 \markup {
 \vspace #2
 \wordwrap-string #"
-  Adona Zevaot,
+  Adonai Tzevaot,
   
   El Shaddai, El Elyon,
   
-  Elohey Yisrael,
+  Elohei Yisrael,
   
   K'dosh Yisrael.
 
@@ -127,6 +127,15 @@ noten = {
   
   Immanuel, Yeshuat Yisrael.
 
+  
+  Yeshua, Seh haElohim,
+  
+  Yeshua, Melech haM'lachim,
+  
+  Yeshua, Adon haAdonim,
+  
+  Yeshua, Lechem haChayim.
+  
   
   Yeshua, Rishon v'Acharon,
   
@@ -141,29 +150,38 @@ noten = {
 \markup {
 \vspace #2
 \wordwrap-string #"
-  Herr der Heerscharen
+  Herr der Heerscharen,
   
-  Allmächtiger Gott, Höchster Gott
+  Allmächtiger Gott, Höchster Gott,
   
-  Gott Israels
+  Gott Israels,
   
-  Heiliger Israels
+  Heiliger Israels.
 
   
-  Wunderbarer Ratgeber, Starker Gott
+  Wunderbarer Ratgeber, Starker Gott,
   
-  Vater der Ewigkeit, Fürst des Friedens
+  Vater der Ewigkeit, Fürst des Friedens,
   
   Gott mit uns, Erlösung Israels
 
   
-  Jesus, der Erste und der Letzte
+  Jesus, Lamm Gottes,
   
-  Jesus, Sohn des Höchsten
+  Jesus, König der Könige,
   
-  Jesus, Licht der Welt
+  Jesus, Herr der Herren,
   
-  Jesus, Ewige Liebe
+  Jesus, Brot des Lebens.
+  
+  
+  Jesus, der Erste und der Letzte,
+  
+  Jesus, Sohn des Höchsten,
+  
+  Jesus, Licht der Welt,
+  
+  Jesus, Ewige Liebe.
 "
 }
 
@@ -176,7 +194,7 @@ noten = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-    \new Voice { \voiceOne << \global \relative c'' \noten >> }
+    \new Voice { \voiceOne \unfoldRepeats { << \global \relative c'' \noten >> } }
   >>
   \midi {
     \context {
