@@ -8,7 +8,7 @@
 global = {
     \key g \major
     \time 4/4
-    \tempo 4 = 100
+    \tempo 4 = 110
 }
 
 akkorde = \chordmode {
@@ -36,7 +36,7 @@ text = \lyricmode {
     sie -- ben bren -- nen -- de Fak -- keln, die sie -- ben Geis -- ter des
     Herrn: Der Geist der Weis -- heit und der Kraft, der Geist der Ein -- sicht
     und der Er -- kennt -- nis, der Geist des Ra -- tes, der Geist des Herrn, der Geist der Furcht vor dem Herrn. Ru -- ach hoch -- mah, Ru -- ach bi -- nah,
-    Ru -- ach et -- zah, Ru -- ach gvu -- rah, Ru -- ach da -- at,
+    Ru -- ach et -- zah, Ru -- ach gvu -- rah, Ru -- ach da' -- at,
     Ru -- ach, jir' -- at A -- do -- nai, Ru -- ach A -- do -- nai.
 }
 
