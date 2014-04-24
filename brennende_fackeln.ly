@@ -2,7 +2,7 @@
 
 \header {
     title = "Brennende Fackeln"
-    composer = "Esther Judith Becker"
+    composer = "Esther Judith Becker, 2011"
 }
 
 global = {
@@ -42,7 +42,17 @@ text = \lyricmode {
 
 notesMelody = {
     b2 b4 c4 | e4 d8 d e2 | d8 d d4 c a |
-    b4 g2 g4 | c2 c4 c | d2. r4 | fis4 fis fis fis fis 
+    b4 g2 g4 | c2 c4 c | d2. r4 | fis8 fis fis fis fis4 fis |
+    a4 a( a4.) r8 | e4 e fis( g) | d2.. r8 | fis8 fis fis fis a4 fis |
+    g2.. r8 | e8 e e4 d8 d fis8 g | d2. b4 | d4 d d c8 b |
+    e4 e e2 | a4 a a a8 a | a4 a b a | a g a2~ | a2 r4 d,4 |
+    e4 e e e | e d d c | d1 | r2 r4 d4 |
+    e4 e e e8 e | fis 4 fis2 fis4 | g4 g g g8 g |
+    a2. r8 g8 | g4 g g d | e fis g r8 g8 | a4 a a a |
+    b b8 a a4 g8 g | g4 g g d8 d | e4 fis g4. g8 |
+    a4 a a g8 fis | g2. r4 | b,4 b8 b b2 | c4 c8 c c2 |
+    d4 d8 d d2 | g4 g8 g g2 | g4 g8 g g2 |
+    a4 a8 a a4 g8 fis | g2.. r8 | c4. b8 a( g) fis4 | g1 | \bar"|."
 }
 
 \score {
