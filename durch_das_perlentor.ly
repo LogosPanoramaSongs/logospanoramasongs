@@ -26,6 +26,21 @@ akkorde = \chordmode {
     c1:m f1:7
     bes1 g1:m c1:m f1:7 bes1
     es1 f1:7 bes1 g1:m
+    
+    g1:m c1:m f2:7 es2
+    bes2 d2:7 g1:m es1
+    f1 bes1 g1:m c1:m
+    f1:7 bes1 g1:m c1:m
+    f1:7 bes1 es1 f1:7
+    bes1 g1:m 
+    
+    g1:m es1 f1:7 bes1 g1:m
+    f1:7 es1 bes1 f1 g1:m
+    es2 f2:7 f2:7 bes2
+    
+    g1:m
+    f1:7 es1 bes1 f1 g1:m
+    es2 f2:7 f2:7 bes2
 }
 
 text = \lyricmode {
@@ -77,18 +92,26 @@ notesMelody = {
     es2. d4 | a2. bes4~ | bes2. a4 | g2.. d'8 | 
     %40
     d4 d g g | g8 es8 es d es2 | c4 c es es |
-    d4 d8( c) d2 | g4 g8 g bes4 bes | bes8 a8 g f8
-    f4 f | f4 f8 f f f f4 | g f4 d4 d4 | d4 d8 d d4 f4 |
-    f8( es8) es d es2 | es4 es4 es4 f4 | es1 |
+    d4 d8( c) d2 | g4 g8 g bes4 bes | bes8 a8 a g8 g4 g |
+    f4 f8 f f4 f8 f | g4 f4 f4 f4 | d4 d8 d d4 f4 |
+    f8( es8) es d es2 | es4 es4 es4 g4 | f1 |
     
-    bes'2. d,4 | es2. f4 | g2. es4 | d1 |
+    \repeat volta 2 {
+    bes2. d,4 | es2. f4 | g2. es4 | d1 |
     bes'2. a4 | g2. a4 | bes1~ | bes2.. bes8 |
     
     bes4 bes8 bes bes4 bes8 bes | bes4 bes8 a g2 |
-    f4 f8 f f4 a | bes bes bes2 | bes bes4 bes4 |
+    f4 f8 f f4 a | bes bes bes2 | bes2 bes4 bes4 |
     bes4 f8 f f4 f | g2 a4 bes | bes f f f |
     f2 f4 f | d' d8 c bes4 bes | g g a a |
-    a8 a a a bes4 bes | \bar"|."
+    a8 a a a bes4 bes |} 
+
+    bes2 bes4 bes4 |
+    bes4 f8 f f4 f | g2 a4 bes | bes f f f |
+    f2 f4 f | d' d8 c bes4 bes | g g a a |
+    a8 a a a bes4 bes |
+
+    \bar"|."
 }
 
 \score {
