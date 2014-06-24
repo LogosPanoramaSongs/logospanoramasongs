@@ -29,6 +29,7 @@ akkorde = \chordmode {
 }
 
 text = \lyricmode {
+    \set stanza = "1. "
     Der Herr hat mich zu euch ge -- sandt,
     mit Sei -- nem Geist bin ich ge -- salbt,
     Frei -- heit zu ver -- kün -- di -- gen,
@@ -42,6 +43,7 @@ text = \lyricmode {
     so wer -- det ihr ge -- nannt.
     Die Welt wird Ihn an euch er -- ken -- nen.
     
+    \set stanza = "2. "
     Die Ru -- i -- nen der Ver -- gan -- gen -- heit
     wer -- den zur Pracht der Ge -- gen -- wart.
     Dei -- ne To -- re sind ein Ruhm,
@@ -66,7 +68,7 @@ noten = {
     e4 e e fis | e8 d d2 r4 | d2 d4 e |
     d8 cis cis2 r8 cis8 | fis4 fis fis4. fis8 |
     fis8 e d( cis) b2 |
-    
+    \break
     r2. b8 cis | d4 d d e | d8 cis cis2 r4 |
     e4 e8 e8 e4 fis | e8 d d2 r4 | d4 d d e |
     d8 cis cis2 r4 | e4 e e fis | e8( d) d2 r4 | fis4 fis4 b4 fis8 fis8 |
