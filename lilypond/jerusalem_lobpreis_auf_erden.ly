@@ -57,7 +57,7 @@ notenRefrain = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \akkorde }
-        \new Voice { \voiceOne << \global \relative c'' \noten >> }
+        \new Voice { << \global \relative c'' \noten >> }
         \addlyrics { \text }
     >>
 }
@@ -65,7 +65,7 @@ notenRefrain = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \akkordeRefrain }
-        \new Voice { \voiceOne << \global \relative c'' \notenRefrain >> }
+        \new Voice { << \global \relative c'' \notenRefrain >> }
         \addlyrics { \textRefrain }
     >>
 }
@@ -73,7 +73,7 @@ notenRefrain = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \akkorde }
-        \new Voice { \voiceOne << \global \relative c'' \noten >> }
+        \new Voice { << \global \relative c'' \noten >> }
     >>
     
     \midi {
@@ -86,7 +86,7 @@ notenRefrain = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \akkordeRefrain }
-        \new Voice { \voiceOne << \global \relative c'' \notenRefrain >> }
+        \new Voice { << \global \relative c'' \notenRefrain >> }
     >>
     
     \midi {

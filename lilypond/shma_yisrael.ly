@@ -72,7 +72,7 @@ notesMelodyB = {
 \score {
     <<
 	\new ChordNames { \set chordChanges = ##t \akkordeA }
-	\new Voice { \voiceOne << \global \relative c' \notesMelodyA >> }
+	\new Voice { << \global \relative c' \notesMelodyA >> }
 	\addlyrics { \textA }
     >>
 }
@@ -80,7 +80,7 @@ notesMelodyB = {
 \score {
     <<
 	\new ChordNames { \set chordChanges = ##t \akkordeB }
-	\new Voice { \voiceOne << \global \relative c' \notesMelodyB >> }
+	\new Voice { << \global \relative c' \notesMelodyB >> }
 	\addlyrics { \textB }
     >>
 }
@@ -88,7 +88,7 @@ notesMelodyB = {
 \score {
     <<
 	\new ChordNames { \set chordChanges = ##t \akkordeA }
-	\new Voice { \voiceOne << \global \relative c' \notesMelodyA >> }
+	\new Voice { << \global \relative c' \notesMelodyA >> }
     >>
     
     \midi {
@@ -101,7 +101,7 @@ notesMelodyB = {
 \score {
     <<
 	\new ChordNames { \set chordChanges = ##t \akkordeB }
-	\new Voice { \voiceOne << \global \relative c' \notesMelodyB >> }
+	\new Voice { << \global \relative c' \notesMelodyB >> }
     >>
     
     \midi {

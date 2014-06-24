@@ -76,7 +76,7 @@ notesMelody = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-    \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
+    \new Voice { << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
   >>
 }
@@ -84,7 +84,7 @@ notesMelody = {
 \score {
   <<
       %\new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-    \new Voice { \voiceOne \unfoldRepeats { << \global \relative c' \notesMelody >> } }
+    \new Voice { \unfoldRepeats { << \global \relative c' \notesMelody >> } }
   >>
   
   \midi {

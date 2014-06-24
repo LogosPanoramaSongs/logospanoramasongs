@@ -91,7 +91,7 @@ noten = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-        \new Voice { \voiceOne << \global \relative c' \noten >> }
+        \new Voice { << \global \relative c' \noten >> }
     >>
     
     \midi {

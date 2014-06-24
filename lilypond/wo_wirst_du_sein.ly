@@ -108,7 +108,7 @@ noten = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \akkorde }
-        \new Voice { \voiceOne << \global \relative c' \noten >> }
+        \new Voice { << \global \relative c' \noten >> }
         \addlyrics { \text }
     >>
 }
@@ -116,7 +116,7 @@ noten = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \akkorde }
-        \new Voice { \voiceOne << \global \relative c' \noten >> }
+        \new Voice { << \global \relative c' \noten >> }
     >>
     
     \midi {

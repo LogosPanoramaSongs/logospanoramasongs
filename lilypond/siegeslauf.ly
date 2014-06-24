@@ -97,7 +97,7 @@ notesRefrainAltA = {
   \score {
     <<
       \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
-      \new Voice { \voiceOne << \global \relative c' \notesVersEins >> }
+      \new Voice { << \global \relative c' \notesVersEins >> }
       \addlyrics { \textA }
       %\addlyrics { \textB }
     >>
@@ -106,7 +106,7 @@ notesRefrainAltA = {
   \score {
    <<
      \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain }
-     \new Voice { \voiceOne << \global \relative c' \notesRefrain  >> }
+     \new Voice { << \global \relative c' \notesRefrain  >> }
      \addlyrics { \textRefrain }
    >>
   }
@@ -176,7 +176,7 @@ Liedtext entsprechend Römer 13, Epheser 6, 1. Korinther 9 und 2. Timotheus 4
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
-    \new Voice { \voiceOne << \global \relative c' \notesVersEins >> }
+    \new Voice { << \global \relative c' \notesVersEins >> }
   >>
   
   \midi {
@@ -189,7 +189,7 @@ Liedtext entsprechend Römer 13, Epheser 6, 1. Korinther 9 und 2. Timotheus 4
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain }
-    \new Voice { \voiceOne << \global \relative c' \notesRefrain  >> }
+    \new Voice { << \global \relative c' \notesRefrain  >> }
   >>
   
   \midi {

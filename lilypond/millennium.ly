@@ -78,7 +78,7 @@ versStropheVier = \lyricmode {
 \score {
     <<
       \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
-      \new Voice { \voiceOne << \global \notenStropheEins >> }
+      \new Voice { << \global \notenStropheEins >> }
       \addlyrics { \versStropheEins }
     >>
 }
@@ -87,7 +87,7 @@ versStropheVier = \lyricmode {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
-    \new Voice { \voiceOne << \global \notenStropheEins >> }
+    \new Voice { << \global \notenStropheEins >> }
   >>
   
   \midi {

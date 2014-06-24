@@ -68,7 +68,7 @@ notesRefrain = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-    \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
+    \new Voice { << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
   >>
 }
@@ -76,7 +76,7 @@ notesRefrain = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain }
-    \new Voice { \voiceOne << \global \relative c' \notesRefrain >> }
+    \new Voice { << \global \relative c' \notesRefrain >> }
     \addlyrics { \textRefrain }
   >>
 }
@@ -84,7 +84,7 @@ notesRefrain = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde  }
-    \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
+    \new Voice { << \global \relative c' \notesMelody >> }
   >>
   
   \midi {
@@ -97,7 +97,7 @@ notesRefrain = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain  }
-    \new Voice { \voiceOne << \global \relative c' \notesRefrain >> }
+    \new Voice { << \global \relative c' \notesRefrain >> }
   >>
   
   \midi {

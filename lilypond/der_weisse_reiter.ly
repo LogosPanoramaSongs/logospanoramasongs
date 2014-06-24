@@ -94,7 +94,7 @@ notesMelody = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-    \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
+    \new Voice { << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
     
  %{   \new TabStaff \with { instrumentName = #"guitar" }
@@ -111,7 +111,7 @@ notesMelody = {
 \score {
   <<
     %\new Staff \with { midiInstrument = "violin" }
-    \new Voice { \voiceOne << \global \relative c' \notesMelody >> }
+    \new Voice { << \global \relative c' \notesMelody >> }
   >>
   
   \midi {
