@@ -11,7 +11,7 @@ global = {
 }
 
 akkorde = \chordmode {
-    r8 | b1:m fis1
+    s8 | b1:m fis1
     fis1 b1:m b1:m
     fis1 fis1 b1:m b1:m
     e1:m fis1 b1:m
@@ -29,7 +29,7 @@ akkorde = \chordmode {
 }
 
 text = \lyricmode {
-    \set stanza = "1. "
+    \set stanza = "Vers 1. "
     Der Herr hat mich zu euch ge -- sandt,
     mit Sei -- nem Geist bin ich ge -- salbt,
     Frei -- heit zu ver -- kün -- di -- gen,
@@ -43,7 +43,7 @@ text = \lyricmode {
     so wer -- det ihr ge -- nannt.
     Die Welt wird Ihn an euch er -- ken -- nen.
     
-    \set stanza = "2. "
+    \set stanza = "Vers 2. "
     Die Ru -- i -- nen der Ver -- gan -- gen -- heit
     wer -- den zur Pracht der Ge -- gen -- wart.
     Dei -- ne To -- re sind ein Ruhm,
@@ -83,7 +83,7 @@ noten = {
 \score {
     <<
         \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-        \new Voice { \voiceOne << \global \relative c' \noten >> }
+        \new Voice { << \global \relative c' \noten >> }
         \addlyrics { \text }
     >>
 }

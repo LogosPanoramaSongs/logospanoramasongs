@@ -12,7 +12,7 @@ global = {
 }
 
 text = \lyricmode {
-    \set stanza = "1. "
+    \set stanza = "Vers 1. "
     Leuch -- tend wie ein Blitz o -- ben am Him -- mel,
     schnell wie der Wind, so sind Got -- tes En -- gel;
     doch Got -- tes Sohn ist hoch er -- höht, mit
@@ -23,7 +23,7 @@ text = \lyricmode {
     Sein Ge -- wand. Sei Zep -- ter ist Ge -- rech -- tig -- keit,
     Sein Reich be -- steht in E -- wig -- keit.
     
-    \set stanza = "2. "
+    \set stanza = "Vers 2. "
     Wie ei -- ne Tau -- be aus der Fer -- ne kommt Sein Volk
     in Sei -- ne Nä -- he. In gol -- de -- nen Ge --
     wän -- dern kom -- men sie aus al -- len Län -- dern
@@ -36,7 +36,7 @@ text = \lyricmode {
 }
 
 akkorde = \chordmode {
-    e1 | e1 | a1 | a2 e2 | e1 | a1 |
+    e1 | e1 | a1 | b2:7 e2 | e1 | a1 |
     b1:7 | e1 | e1 | a1 | b1:7 |
     e1 | a2 b2:7 | b1:7 | e1 | a1 |
     
@@ -44,7 +44,7 @@ akkorde = \chordmode {
     b1:7 | b2:7 e2 | e1 | e1 | e1 | a1 |
     b2:7 e2 | e1 | a1 | b1:7 | b2:7 e2 |
     
-    e1 | a1 | b1:7 | b1:7 | a2 b2:7 |
+    e1 | a1 | b1:7 | e1 | a2 b2:7 |
     b1:7 | e1 | a1 | e1 | b1:7 |
     e1 | a1 | e1 | b1:7 | e1 |
     a2 b2:7 | b1:7 | e1 |
