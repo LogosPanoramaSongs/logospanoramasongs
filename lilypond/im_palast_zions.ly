@@ -71,7 +71,7 @@ noten = {
     cis4 cis8( dis) e4 cis | b4. gis8 b2 |
     fis'4 fis8( gis) a4 a | gis4. fis8 e4 e | cis'2 a4 cis |
     b4. gis8 b2 | fis2 gis8( a) a dis, | e2. e4 |
-    a4 a8 a b4 b | b2. dis,4 | e2. r4 | \bar"|."
+    a4 a8 a b4 b | b2.( dis,4) | e2. r4 | \bar"|."
 }
 
 \score {
