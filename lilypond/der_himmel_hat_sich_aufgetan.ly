@@ -12,6 +12,7 @@ global = {
 }
 
 text = \lyricmode {
+  \set stanza = "Vers 1: "
   Herr, Du hörst was ich sa -- ge,
   Du siehst wo ich hin ge -- he,
   weißt, was ich den -- ke aus der Fer -- ne.
@@ -36,16 +37,16 @@ akkorde = \chordmode {
   a1 e1 a1 a1 d1 a1
   d1 a1 e1 a1 a1 e1 a1
   a1 d1 a1 d1 a1 e1 a1
-}
+%}
 
-akkordeRefrain = \chordmode {
+%akkordeRefrain = \chordmode {
   a1 d1
   e1 e2 a2 a1 a1 d1
   e1 e1 r1 a1 a1 a1
   d2 e2 a1 a1 d2 e2 a1
 }
 
-notesMelody = {
+noten = {
   cis4 cis cis cis | d2 d4( gis,) | a2. r4 |
   e'4 e e e | fis2 fis4( e) | e2. r4 |
   fis2 gis4 a | a4.( e8) e2 | d4 cis b4.( a8) a2. r4 |
@@ -53,9 +54,9 @@ notesMelody = {
   e'4 e e e | fis2 fis4( e) | e2. r4 |
 
   fis4 fis gis a | a4. e8 e2 | d4 cis b4. a8 | a2. r4 | \bar"||"
-}
-
-notesRefrain = {
+%}
+\break
+%notesRefrain = {
   a'4 a8 a a4 a |
   a a8 gis fis4. r8 |
   e8 e e e e4 e8 e | gis4.( b8) a4. r8 |
@@ -68,36 +69,15 @@ notesRefrain = {
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
-    \new Voice { << \global \relative c' \notesMelody >> }
-    \addlyrics { \text }
-  >>
-}
-
-\score {
-  <<
-    \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain }
-    \new Voice { << \global \relative c' \notesRefrain >> }
-    \addlyrics { \textRefrain }
+    \new Voice { << \global \relative c' \noten >> }
+    \addlyrics { \text \textRefrain }
   >>
 }
 
 \score {
   <<
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde  }
-    \new Voice { << \global \relative c' \notesMelody >> }
-  >>
-  
-  \midi {
-    \context {
-      \Score
-    }
-  }
-}
-
-\score {
-  <<
-    \new ChordNames { \set chordChanges = ##t \germanChords \akkordeRefrain  }
-    \new Voice { << \global \relative c' \notesRefrain >> }
+    \new Voice { << \global \relative c' \noten >> }
   >>
   
   \midi {

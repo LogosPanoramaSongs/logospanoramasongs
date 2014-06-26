@@ -24,6 +24,7 @@ akkorde = \chordmode {
 }
 
 text = \lyricmode {
+    \set stanza = "Vers 1:"
     Vom Öl -- berg zum Hei -- lig -- tum
     führt der Weg durch das Gol -- de -- ne Tor.
     Die -- ses wird ver -- schloss -- sen sein

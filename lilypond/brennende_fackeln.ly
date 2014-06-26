@@ -27,6 +27,7 @@ akkorde = \chordmode {
 }
 
 text = \lyricmode {
+    \set stanza = "Vers 1: "
     Durch ei -- ne of -- fe -- ne Tür blick -- te ich in den
     Him -- mel. Ich sah ei -- nen Thron ähn -- lich wie Sa -- phir im
     Him -- mel. Der da -- rauf saß, strahl -- te wie ein Di -- a --
@@ -34,7 +35,9 @@ text = \lyricmode {
     um den Thron. Blit -- ze, Don -- ner und Stim -- men ka -- men aus dem Thron.
     Ein kris -- tall -- kla -- res Meer war vor dem Thron und
     sie -- ben bren -- nen -- de Fak -- keln, die sie -- ben Geis -- ter des
-    Herrn: Der Geist der Weis -- heit und der Kraft, der Geist der Ein -- sicht
+    Herrn: 
+    \set stanza = "Refrain: "
+    Der Geist der Weis -- heit und der Kraft, der Geist der Ein -- sicht
     und der Er -- kennt -- nis, der Geist des Ra -- tes, der Geist des Herrn, der Geist der Furcht vor dem Herrn. Ru -- ach hoch -- mah, Ru -- ach bi -- nah,
     Ru -- ach et -- zah, Ru -- ach gvu -- rah, Ru -- ach da' -- at,
     Ru -- ach, jir' -- at A -- do -- nai, Ru -- ach A -- do -- nai.
