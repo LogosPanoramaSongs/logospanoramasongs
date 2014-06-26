@@ -1,12 +1,22 @@
-\documentclass[a4paper]{scrartcl}
+\documentclass[german, a4paper, 16pt]{scrartcl}
 \usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{slantsc}
+%\usepackage{helvet}
 \usepackage[T1]{fontenc}
-\usepackage[german]{babel}
 \usepackage{multicol}
-\usepackage[scaled]{helvet}
-\renewcommand*\familydefault{\sfdefault}
+%\usepackage[scaled]{helvet}
+%\usepackage{mathptm}
+%\usepackage{newcent}
+\usepackage{fontspec}
+
+\newcommand*{\defaultfontfamily}{DejaVuSerif}%
+%\defaultfontfeatures{Mapping=tex-text, Ligatures={Discretionary, Common, Rare}}%
+\setmainfont{\defaultfontfamily}%
+%\renewcommand*\familydefault{\sfdefault}
 \setlength\parindent{0pt}
 \usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=2.5cm]{geometry}
+\usepackage{musixguit}
 
 \begin{document}
 
@@ -22,16 +32,20 @@
 %\end{minipage}
 
 \vspace{.7cm}
+%\newpage
 \begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Der Himmel hat sich aufgetan}
 \lilypondfile{../lilypond/der_himmel_hat_sich_aufgetan.ly}
+\vspace{.2cm}\\
+\input{der_himmel_hat_sich_aufgetan.tex}
 \end{minipage}
 
-\vspace{.7cm}
-\begin{minipage}{\columnwidth}
+%\vspace{.7cm}
+\newpage
+%\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Der Gesandte}
 \lilypondfile{../lilypond/der_gesandte.ly}
-\end{minipage}
+%\end{minipage}
 
 %\vspace{.7cm}
 %\begin{minipage}{\columnwidth}
@@ -40,15 +54,21 @@
 %\end{minipage}
 
 \vspace{.7cm}
-\begin{minipage}{\columnwidth}
+%\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Brennende Fackeln}
 \lilypondfile{../lilypond/brennende_fackeln.ly}
-\end{minipage}
+%\vspace{.2cm}\\
+\newpage
+\input{brennende_fackeln.tex}
+%\end{minipage}
 
-\vspace{.7cm}
+\newpage
+%\vspace{.7cm}
 %\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Sein Name}
 \lilypondfile{../lilypond/sein_name.ly}
+\vspace{.7cm}\\
+\input{./sein_name.tex}
 %\end{minipage}
 
 %\vspace{.7cm}
@@ -57,7 +77,8 @@
 %\lilypondfile{../lilypond/lied_in_der_nacht.ly}
 %\end{minipage}
 
-\vspace{.7cm}
+\newpage
+%\vspace{.7cm}
 %\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Der weiße Reiter}
 \lilypondfile{../lilypond/der_weisse_reiter.ly}
@@ -79,6 +100,8 @@
 \begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Neugeboren}
 \lilypondfile{../lilypond/neugeboren.ly}
+\vspace{.7cm}\\
+\input{neugeboren.tex}
 \end{minipage}
 
 %\vspace{.7cm}
@@ -91,6 +114,25 @@
 \begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Auf dem Berg}
 \lilypondfile{../lilypond/auf_dem_berg.ly}
+\vspace{.2cm}\\
+%\begin{song}
+\input{auf_dem_berg.tex}
+%\end{song}
+\end{minipage}
+
+\newpage
+\vspace{.7cm}
+%\begin{minipage}{\columnwidth}
+\addcontentsline{toc}{section}{Ich war da}
+\lilypondfile{../lilypond/ich_war_da.ly}
+%\end{minipage}
+
+\vspace{.7cm}
+\begin{minipage}{\columnwidth}
+\addcontentsline{toc}{section}{Jerusalem - Lobpreis auf Erden}
+\lilypondfile{../lilypond/jerusalem_lobpreis_auf_erden.ly}
+\vspace{.2cm}\\
+\input{jerusalem_lobpreis_auf_erden.tex}
 \end{minipage}
 
 %\vspace{.7cm}
@@ -103,6 +145,8 @@
 \begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Millennium}
 \lilypondfile{../lilypond/millennium.ly}
+\vspace{.7cm}\\
+\input{millennium.tex}
 \end{minipage}
 
 %\vspace{.7cm}
@@ -117,7 +161,8 @@
 \lilypondfile{../lilypond/in_deinem_haus.ly}
 \end{minipage}
 
-\vspace{.7cm}
+\newpage
+%\vspace{.7cm}
 %\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Es wird keine Nacht mehr sein}
 \lilypondfile{../lilypond/es_wird_keine_nacht_mehr_sein.ly}
@@ -159,7 +204,8 @@
 \lilypondfile{../lilypond/shma_yisrael.ly}
 \end{minipage}
 
-\vspace{.7cm}
+\newpage
+%\vspace{.7cm}
 %\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Wo wirst du sein}
 \lilypondfile{../lilypond/wo_wirst_du_sein.ly}
@@ -176,6 +222,9 @@
 \addcontentsline{toc}{section}{Siegeslauf}
 \lilypondfile{../lilypond/siegeslauf.ly}
 %\end{minipage}
+%\vspace{.7cm}
+\newpage
+\input{./siegeslauf.tex}
 
 \vspace{.7cm}
 \begin{minipage}{\columnwidth}
@@ -183,10 +232,13 @@
 \lilypondfile{../lilypond/weit_ueberm_himmelszelt.ly}
 \end{minipage}
 
-\vspace{.7cm}
+\newpage
+%\vspace{.7cm}
 %\begin{minipage}{\columnwidth}
 \addcontentsline{toc}{section}{Auf dem goldenen Altar}
 \lilypondfile{../lilypond/auf_dem_goldenen_altar.ly}
 %\end{minipage}
+\vspace{.7cm}
+\input{./auf_dem_goldenen_altar.tex}
 
 \end{document}
