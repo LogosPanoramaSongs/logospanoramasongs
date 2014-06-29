@@ -44,7 +44,7 @@ akkorde = \chordmode {
 text = \lyricmode {
     Um Sa -- lo -- mos gött -- li -- che Weis -- heit zu hö -- ren,
     kam ei -- ne Kö -- ni -- gin aus dem fer -- nen Sü -- den.
-    Je -- schu -- a, Got -- tes Sohn, ist vie grö -- ßer als Sa -- lo -- mo.
+    Je -- schu -- a, Got -- tes Sohn, ist viel grö -- ßer als Sa -- lo -- mo.
     Willst du Sei -- ne Weis -- heit hö -- ren,
     willst du zu Ihm kom -- men?
     Ni -- ni -- ves Ein -- woh -- ner glaub -- ten Jo -- nah,

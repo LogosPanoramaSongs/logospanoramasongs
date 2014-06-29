@@ -20,7 +20,7 @@ text = \lyricmode {
     der Herr sitzt auf Sei -- nem Thron in Sei -- nem Pa -- last in
     Zi -- on. Mit dem Öl der Freu -- de ist
     Er ge -- salbt, nach A -- lo -- e und Myr -- rhe duf -- tet
-    Sein Ge -- wand. Sei Zep -- ter ist Ge -- rech -- tig -- keit,
+    Sein Ge -- wand. Sein Zep -- ter ist Ge -- rech -- tig -- keit,
     Sein Reich be -- steht in E -- wig -- keit.
     
     \set stanza = "Vers 2. "
