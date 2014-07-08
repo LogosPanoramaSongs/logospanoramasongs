@@ -28,7 +28,7 @@ text = \lyricmode {
     _ _ _ _ _ _ _
     \set stanza = #"Vers 1: "
     Mein wun -- der -- ba -- rer Hir -- te bist Du, Herr;
-    Nichts wird mir je -- mals fehl -- len.
+    Nichts wird mir je -- mals feh -- len.
     Du wei -- dest mich auf saf -- ti -- gen Wie -- sen,
     Du führst mich zu fri -- schen Quel -- len,
     Du lei -- test mich auf si -- che -- ren We -- gen.
