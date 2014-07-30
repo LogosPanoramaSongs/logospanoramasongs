@@ -133,9 +133,9 @@ akkorde = \chordmode {
 }
 
 noten = {
-    c4 c c b | a a g a | b2 b4 a | g2. g4 |
+    c4 c c b | a a g a | b2 b4 a | g2. b4 |
     c2 c4 b | a2 g4 a | b2 b4 a | b2. b4 |
-    c4 c c b | a a g a | b b b a | g2. g4 |
+    c4 c c b | a a g a | b b b a | g2. b4 |
     c4 c c b | a2 g4 fis | g2 g | r1 |
     c2 c4 b |  a2 g4 fis | g2. fis4 | e1 |
     
@@ -169,9 +169,9 @@ noten = {
     b4 a a2 | a4 a c4 c8 c | b4 b b2 |
     
     % Vers 5:
-    c4 c c( b) | a a g a | b2 b4 a | g2. g4 |
+    c4 c c( b) | a a g a | b2 b4 a | g2. b4 |
     c2 c4 b | a2 g4 a | b2 b4( a) | b2. b4 |
-    c4 c c b | a a g a | b b b( a) | g2. g4 |
+    c4 c c b | a a g a | b b b( a) | g2. b4 |
     c4 c c b | a2 g4 fis | g2 g | r1 |
     
     % Vers 6:
