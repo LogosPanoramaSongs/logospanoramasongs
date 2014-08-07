@@ -31,7 +31,7 @@ text = \lyricmode {
     last, in Sei -- nen Pa -- last in Zi -- on.
     Herr -- li -- che Mu -- sik er -- klingt,
     Sein Volk sing Ihm e -- wig -- lich. Die Braut lebt beim
-    Bräu -- ti -- gam, in Sei -- nem Pa -- last,
+    Bräu -- ti -- gam in Sei -- nem Pa -- last,
     in Sei -- nem Pa -- last in Zi -- on.
 }
 
