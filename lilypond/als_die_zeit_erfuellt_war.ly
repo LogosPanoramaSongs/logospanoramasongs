@@ -2,7 +2,7 @@
 
 \header {
     title = "Als die Zeit erfüllt war"
-    composer = "Esther Judith Becker"
+    composer = "Esther Judith Becker, 2012"
 }
 
 global = {
