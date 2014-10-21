@@ -22,7 +22,7 @@ text = \lyricmode {
     Je -- schu -- a: Frei -- heit für Ge -- fan -- ge -- ne.
     Je -- schu -- a: Trost für Ver -- zwei -- fel -- te.
     Je -- schu -- a: Licht für al -- le Völ -- ker.
-    Je -- schu -- a: Re -- ter und Er -- lö -- ser.
+    Je -- schu -- a: Ret -- ter und Er -- lö -- ser.
 }
 
 akkorde = \chordmode {
@@ -35,7 +35,7 @@ akkorde = \chordmode {
     bes1 | c1:m | bes1 | g1:m |
     c1:m | d1:7 | g2:m es2 |
     bes1 | f2:7 bes2 | g1:m |
-    c1 | f1:7 | d1:7 |
+    c1:m | f1:7 | d1:7 |
     g1:m | es2 bes2 | g1:m |
     c1:m | f1:7 | d1:7 |
     g2:m es2 | f2:7 bes2 |
@@ -53,14 +53,14 @@ noten = {
     bes4 bes bes2 | a4 a bes4. bes8 | d4.( bes8) g2 |
     c4 c c4. bes8 | a4 a8 a( a4.) a8 | fis4.( g8) a2 |
     bes2 g4 g | f es d4. bes'8 | d4.( bes8) g2 |
-    c4 c c bes | a4 a2( a8) a8 | fis4.( g8) a2 |
+    c4 c c bes | a8 a2( a8 a8) a8 | fis4.( g8) a2 |
     bes4 bes bes bes | bes4( a) bes2 |
     \bar"|."
 }
 
 \score {
     <<
-        \new ChordNames { \set chordChanges = ##t \akkorde }
+        \new ChordNames { \set chordChanges = ##f \akkorde }
         \new Voice { << \global \relative c' \noten >> }
         \addlyrics { \text }
     >>
