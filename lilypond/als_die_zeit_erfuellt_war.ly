@@ -53,7 +53,7 @@ noten = {
     bes4 bes bes2 | a4 a bes4. bes8 | d4.( bes8) g2 |
     c4 c c4. bes8 | a4 a8 a( a4.) a8 | fis4.( g8) a2 |
     bes2 g4 g | f es d4. bes'8 | d4.( bes8) g2 |
-    c4 c c bes | a8 a2( a8 a8) a8 | fis4.( g8) a2 |
+    c4 c c bes | a8 a2( a4) a8 | fis4.( g8) a2 |
     bes4 bes bes bes | bes4( a) bes2 |
     \bar"|."
 }
