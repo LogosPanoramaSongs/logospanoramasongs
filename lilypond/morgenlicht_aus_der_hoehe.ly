@@ -41,7 +41,7 @@ text = \lyricmode {
 }
 
 akkorde = \chordmode {
-  r8 c1:m f1:m g1 c1:m
+  s8 c1:m f1:m g1 c1:m
   c1:m f1:m f1:m c1:m f1:m
   c1:m g1 c1:m c1:m f1:m
   g1 c1:m c1:m f1:m f1:m
@@ -95,8 +95,26 @@ notesMelody = {
     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
     \new Voice { << \global \relative c' \notesMelody >> }
     \addlyrics { \text }
+    %\new Voice { << \global \clef bass \relative c' \notesMelody >> }
   >>
 }
+
+% \score {
+%   
+%   << 
+%     \new ChordNames { \set chordChanges = ##t \germanChords \akkorde }
+%     \new Voice { \voiceOne << \global \relative c'' \notesMelody >> }
+%     
+%     \new TabStaff \with { instrumentName = #"mandolin" }
+%     <<
+%       \set TabStaff.stringTunings = #guitar-tuning
+%           {
+%               %\stemDown
+%              \relative c' \notesMelody
+%           }
+%           >>
+%     >>
+%}
 
 \score {
   <<
