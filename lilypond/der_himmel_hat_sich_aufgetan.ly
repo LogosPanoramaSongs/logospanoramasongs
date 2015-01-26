@@ -16,7 +16,7 @@ textA = \lyricmode {
     Herr, Du hörst was ich sa -- ge,
     Du siehst wo ich hin ge -_ he,
     weißt, was ich den -_ ke aus der Fer -- ne.
-    Du weißt wann ich auf ste -- he,
+    Du weißt wann ich auf ste -_ he,
     siehst, wenn ich mich hin le -_ ge,
     Dei -- ne Hän -- de ü -- ber mir,
     und Dein Geist in mir.
@@ -26,7 +26,7 @@ textB = \lyricmode {
     Als ich im Ver -- bor -- genen war,
     da _ warst _ Du mir schon nah.
     Herr, Du hast mich be -- wahrt im Mut -- ter -- leib.
-    Mei -- ne form -- lo -- se Ge -- stalt
+    Mei -- ne form -_ lo -- se Ge -- stalt
     war be -- glei -- tet von Dei -- ner Hand.
     In _ Dei -- nem Buch _ stand all _ mei -- ne Zeit.
 }
@@ -50,7 +50,7 @@ akkorde = \chordmode {
 
     a1 | d1 |
     e1 | e2 a2 | a1 | a1 | d1 |
-    e1 | e1 | r1 | a1 | a1 | a1 |
+    e1 | e1 | s1 | a1 | a1 | a1 |
     d2 e2 | a2. 
     \repeat volta 3 { \partial 4 a4 |} \alternative { { a1 | d2 e2 | a1 |} { a1 | e1 | a1 | } }
 }
@@ -58,9 +58,9 @@ akkorde = \chordmode {
 noten = {
     \phrasingSlurDotted
     cis4 cis cis cis | d2 d4( gis,) | a2. r4 |
-    e'4 e e e | fis2 fis4\( e\) | e2. r4 |
+    e'4\( e\) e e | fis2 fis4\( e\) | e2. r4 |
     fis2 gis4 a | a4.\( e8\) e2 | d4 cis b4.( a8) a2. r4 |
-    cis4 cis cis cis | d2 d4( gis,) | a2. r4 |
+    cis4 cis cis\( cis\) | d2 d4\( gis,\) | a2. r4 |
     e'4 e e e | fis2 fis4\( e\) | e2. r4 |
 
     fis4\( fis\) gis a | a4.\( e8\) e2 | d4\( cis\) b4. a8 | a2. r4 |
