@@ -10,8 +10,10 @@ global = {
   \time 4/4
   \tempo 4 = 115
 }
+from = b
+to = c
 
-notenStropheEins = \relative c' {
+notenStropheEins = {
   dis4. cis8 dis4 fis4 | dis4. cis8 dis4 fis8 fis8 |
   gis4 fis4 e4 dis4 | cis2. cis4 |
   e4.( dis8 ) e4 dis4 | dis2 dis2 | gis4 gis4 gis4 b4 |
@@ -19,19 +21,19 @@ notenStropheEins = \relative c' {
   gis4 fis4 e4 dis4 | cis2. cis4 |
   e4.( dis8 ) e4 dis4 | dis2 dis2 | fis4 fis4 fis4 ais4 | b1 | \bar "|."
 }
-notenStropheZwei = \relative c' {
-  dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4
+notenStropheZwei = {
+  dis4. cis8 dis4 fis4 | dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4
   e4. dis8 e4 dis4 dis2 dis2 gis2 gis4 ( b4 ) ais1 \bar ""
   dis,4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r4 \bar ""
   e4. dis8 e4 dis4 dis4 dis4 dis4 dis4 fis4 fis8 fis8 fis4 ais4 b1 \bar "|."
 }
-notenStropheDrei = \relative c' {
+notenStropheDrei = {
   dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis8 fis8 gis4 fis4 e4 dis4 cis2. r8 cis4
   e4.( dis8 ) e4 dis4 dis2 dis2 gis4 gis4 gis4 b4 ais1 \bar ""
   dis,4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4 \bar ""
   e4.( dis8 ) e4 dis4 dis2 dis2 fis4 fis4 fis4 ais4 b1 \bar "|."
 }
-notenStropheVier = \relative c' {
+notenStropheVier = {
   dis4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r8 cis4
   e4. dis8 e4 dis4 dis2 dis2 gis2 gis4 ( b4 ) ais1 \bar ""
   dis,4. cis8 dis4 fis4 dis4. cis8 dis4 fis4 gis4 fis4 e4 dis4 cis2. r4 \bar ""
@@ -77,23 +79,8 @@ versStropheVier = \lyricmode {
 %\bookpart {
 \score {
     <<
-      \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
-      \new Voice { << \global \notenStropheEins >> }
-      \addlyrics { \versStropheEins }
+        \new ChordNames { \set chordChanges = ##t \germanChords \transpose \from \to { \akkordeVersEins } }
+        \new Voice { << \transpose \from \to { \global \relative c'' \notenStropheEins } >> }
+        \addlyrics { \versStropheEins }
     >>
-}
-
-%fuer die midi-ausgabe
-\score {
-  <<
-    \new ChordNames { \set chordChanges = ##t \germanChords \akkordeVersEins }
-    \new Voice { << \global \notenStropheEins >> }
-  >>
-  
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 4)
-    }
-  }
 }
